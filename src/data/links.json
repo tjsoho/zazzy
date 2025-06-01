@@ -1,0 +1,61 @@
+{
+  "links": [
+    {
+      "id": "3",
+      "title": "Website Obsession",
+      "url": "https://www.ai-guy.co/home#section6-works",
+      "imageUrl": "/images/bella.png,/images/chevell.png,/images/danny.png,/images/freyee.png,/images/natalia.png,/images/path.png,/images/sloane.png,/images/tugun.png,/images/walker.png",
+      "type": "extraLarge",
+      "order": 1,
+      "isActive": true,
+      "clicks": 0,
+      "clickHistory": {}
+    },
+    {
+      "id": "1",
+      "title": "1-Hour-A-Week-Marketing",
+      "url": "https://calendly.com/ai-guy-bookings/1-hour-a-week-marketing",
+      "imageUrl": "/images/power1.jpg",
+      "type": "large",
+      "order": 2,
+      "isActive": true,
+      "clicks": 0,
+      "clickHistory": {}
+    },
+    {
+      "id": "2",
+      "title": "Ai Tools Just For You",
+      "url": "https://calendly.com/ai-guy-bookings/1-1-consultation-ai-guy",
+      "imageUrl": "/images/sunniesCrop.jpeg",
+      "type": "medium",
+      "order": 3,
+      "isActive": true,
+      "clicks": 0,
+      "clickHistory": {}
+    },
+    {
+      "id": "4",
+      "title": "Sloane",
+      "url": "https://www.sloane.biz",
+      "imageUrl": "/images/heroMock.png",
+      "type": "small",
+      "order": 4,
+      "isActive": true,
+      "clicks": 0,
+      "clickHistory": {}
+    },
+    {
+      "id": "5",
+      "title": "Blog: Business Tech Insights",
+      "url": "https://www.ai-guy.co/blog",
+      "imageUrl": "/images/blog-icon.png",
+      "type": "small",
+      "order": 5,
+      "isActive": true,
+      "clicks": 2,
+      "clickHistory": {
+        "2025-06-01": 2
+      }
+    }
+  ]
+}
