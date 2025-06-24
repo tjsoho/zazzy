@@ -53,6 +53,11 @@ export function LinksProvider({ children }: { children: ReactNode }) {
             .finally(() => setIsLoading(false));
     }, []);
 
+    if (isLoading) {
+        // Optionally, you can return a loading spinner here
+        return null;
+    }
+
     const updateLinks = async (newLinks: LinkData[]) => {
         try {
             await updateLinksAPI(newLinks);

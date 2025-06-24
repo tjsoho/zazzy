@@ -25,7 +25,7 @@ import { useLinks } from '@/context/LinksContext';
 /***************************************************************
                 Components
 ***************************************************************/
-const SocialLinkSloane: FC<LinkProps> = ({ data, className }) => {
+const LinkSmall: FC<LinkProps> = ({ data, className }) => {
     const { trackClick } = useLinks();
     if (!data.isActive) return null;
 
@@ -53,4 +53,4 @@ const SocialLinkSloane: FC<LinkProps> = ({ data, className }) => {
 /***************************************************************
                 EXPORTS
 ***************************************************************/
-export default SocialLinkSloane; 
+export default LinkSmall; 

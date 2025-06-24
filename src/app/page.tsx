@@ -4,7 +4,7 @@ import LinkMedium from '@/components/LinkMedium';
 import MyWorks from '@/components/LinkExtraLarge';
 import Profile from '@/components/Profile';
 import SocialLinkBlog from '@/components/SocialLinkBlog';
-import SocialLinkSloane from '@/components/LinkSmall';
+import LinkSmall from '@/components/LinkSmall';
 import { useLinks } from '@/context/LinksContext';
 
 const profileData = {
@@ -34,8 +34,8 @@ export default function Home() {
     .filter((link) => link.type === 'small' && link.title.includes('Blog'))
     .sort((a, b) => a.order - b.order);
 
-  const sloaneLinks = links
-    .filter((link) => link.type === 'small' && link.title.includes('Sloane'))
+  const smallLinks = links
+    .filter((link) => link.type === 'small' && !link.title.includes('Blog'))
     .sort((a, b) => a.order - b.order);
 
   if (isLoading) {
@@ -77,20 +77,20 @@ export default function Home() {
 
       {/* Foreground Content */}
       <div className="relative z-10 flex flex-col items-center w-full h-full mt-58 gap-6">
-        {blogLinks.map((link) => (
-          <SocialLinkBlog key={link.id} data={link} />
+        {mediumLinks.map((link) => (
+          <LinkMedium key={link.id} data={link} />
         ))}
-        {sloaneLinks.map((link) => (
-          <SocialLinkSloane key={link.id} data={link} />
+        {smallLinks.map((link) => (
+          <LinkSmall key={link.id} data={link} />
         ))}
         {extraLargeLinks.map((link) => (
           <MyWorks key={link.id} data={link} />
         ))}
+        {blogLinks.map((link) => (
+          <SocialLinkBlog key={link.id} data={link} />
+        ))}
         {largeLinks.map((link) => (
           <LinkLarge key={link.id} data={link} />
-        ))}
-        {mediumLinks.map((link) => (
-          <LinkMedium key={link.id} data={link} />
         ))}
       </div>
     </main>

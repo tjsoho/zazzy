@@ -12,7 +12,7 @@
       "clickHistory": {}
     },
     {
-      "id": "1",
+      "id": "6",
       "title": "1-Hour-A-Week-Marketing",
       "url": "https://calendly.com/ai-guy-bookings/1-hour-a-week-marketing",
       "imageUrl": "/images/power1.jpg",
@@ -23,15 +23,17 @@
       "clickHistory": {}
     },
     {
-      "id": "2",
+      "id": "4",
       "title": "Ai Tools Just For You",
       "url": "https://calendly.com/ai-guy-bookings/1-1-consultation-ai-guy",
       "imageUrl": "/images/sunniesCrop.jpeg",
       "type": "medium",
       "order": 3,
       "isActive": true,
-      "clicks": 0,
-      "clickHistory": {}
+      "clicks": 1,
+      "clickHistory": {
+        "2025-06-24": 1
+      }
     },
     {
       "id": "4",
@@ -55,6 +57,32 @@
       "clicks": 2,
       "clickHistory": {
         "2025-06-01": 2
+      }
+    },
+    {
+      "id": "2",
+      "title": "Free Website Chat",
+      "url": "https://calendly.com/ai-guy-bookings/first-inital-catch-up",
+      "imageUrl": "/images/natalia.png",
+      "type": "small",
+      "order": 6,
+      "isActive": true,
+      "clicks": 1,
+      "clickHistory": {
+        "2025-06-24": 1
+      }
+    },
+    {
+      "id": "1",
+      "title": "The AiGUY Website",
+      "url": "https://www.ai-guy.co",
+      "imageUrl": "/images/profile.png",
+      "type": "small",
+      "order": 7,
+      "isActive": true,
+      "clicks": 1,
+      "clickHistory": {
+        "2025-06-24": 1
       }
     }
   ]
