@@ -6,6 +6,7 @@ import Profile from '@/components/Profile';
 import SocialLinkBlog from '@/components/SocialLinkBlog';
 import LinkSmall from '@/components/LinkSmall';
 import { useLinks } from '@/context/LinksContext';
+import { LinkData } from '@/types/links';
 
 const profileData = {
   name: "Your Name",
@@ -37,6 +38,18 @@ export default function Home() {
   const smallLinks = links
     .filter((link) => link.type === 'small' && !link.title.includes('Blog'))
     .sort((a, b) => a.order - b.order);
+
+  const newsletterLink: LinkData = {
+    id: 'newsletter',
+    title: 'Ai Newsletter - Stay Informed',
+    url: 'https://unique-rain-56040.myflodesk.com/owpqfmbfo2',
+    imageUrl: '/images/profile.png',
+    type: 'small',
+    order: 999, // or a value to place it at the end
+    isActive: true,
+    clicks: 0,
+    clickHistory: {},
+  };
 
   if (isLoading) {
     return (
@@ -76,7 +89,9 @@ export default function Home() {
       </div>
 
       {/* Foreground Content */}
-      <div className="relative z-10 flex flex-col items-center w-full h-full mt-58 gap-6">
+      <div className="relative z-10 flex flex-col items-center w-full h-full mt-62 gap-6">
+        {/* Newsletter Button as a LinkSmall */}
+        <LinkSmall data={newsletterLink} />
         {mediumLinks.map((link) => (
           <LinkMedium key={link.id} data={link} />
         ))}
